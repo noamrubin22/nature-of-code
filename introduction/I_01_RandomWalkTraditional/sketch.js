@@ -22,15 +22,10 @@ class Walker {
   }
 
   step() {
-    let choice = floor(random(4));
-    if (choice == 0) {
-      this.x++;
-    } else if (choice == 1) {
-      this.x--;
-    } else if (choice == 2) {
-      this.y++;
-    } else {
-      this.y--;
-    }
+    let stepx = random(-1, 1);
+    let stepy = random(-1, 1);
+
+    this.x += stepx;
+    this.y += stepy;
   }
 }
